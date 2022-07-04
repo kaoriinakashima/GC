@@ -1,2 +1,3 @@
 *.fits
+*/saving_plots/*
 *.ipynb_checkpoints
