@@ -1,0 +1,31 @@
+data:
+  evfile : /home/vault/caph/mppi062h/repositories/syserror_3d_bkgmodel/2-source_dataset/GC_fermi/events_list.lst
+  scfile : /home/woody/caph/mppi062h/fermi/L220208034643CD43587C92_SC00.fits
+  ltcube : null
+
+binning:
+  roiwidth   : 20.0
+  binsz      : 0.08
+  binsperdec : 8
+
+selection :
+  emin : 10000
+  emax : 500000
+  zmax    : 90
+  evclass : 128
+  evtype  : 32
+  tmin    : 239557417
+  tmax    : 665983584
+  filter  : 'DATA_QUAL>0 && LAT_CONFIG==1'
+  target : '3FGL J1745.6-2859'
+
+gtlike:
+  edisp : True
+  irfs : 'P8R3_SOURCE_V3'
+  edisp_disable : ['isodiff','galdiff']
+
+model:
+  src_roiwidth : 24.0
+  galdiff  : '/home/woody/caph/mppi062h/gammapy_data/fermi/gll_iem_v07.fits'
+  isodiff  : '/home/vault/caph/mppi062h/repositories/syserror_3d_bkgmodel/2-source_dataset/GC_fermi/iso_P8R3_SOURCE_V3_v1.txt'
+  catalogs : ['3FGL']

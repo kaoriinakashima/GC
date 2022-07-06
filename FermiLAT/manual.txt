@@ -1,0 +1,16 @@
+The Fermi datasets are splitted into different energy ranges.
+
+Each energy range is to answer a specific question. check the questions in your google drive presentation
+
+The dataset of each energy range has a different configuration (accordingly to the question I want to answer).
+
+The configurations are described in the google slides. On top of the different energy datasets, it is also splitted into different time binning. 
+
+For each dataset, energy range, time bin, there is a specific configuration file, which is inside each folder. 
+
+you need to run GTAnalysis. What is a good strategy is: run GTAnalysis in screen section over night
+
+After that, you need to run gtpsf also on terminal to get the PSF cube
+
+
+
