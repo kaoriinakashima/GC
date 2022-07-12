@@ -13,4 +13,30 @@ you need to run GTAnalysis. What is a good strategy is: run GTAnalysis in screen
 After that, you need to run gtpsf also on terminal to get the PSF cube
 
 
+-----------------
+Organization of the folder:
 
+random important files:
+- source_lists.txt: the name of the sources, by order of significance, to be added in the fit.
+- confg_example.yaml: file used as example for creating the dataset as input for gammapy.
+
+
+0- scripts to create the output from fermi science tools to be as input in gammapy:
+    inputs: downloaded data from fermilat site
+    output: .fits files for gammapy
+    
+1- creating the datasets in gammapy shape
+    inputs: the .fits files from notebook 0
+    output: Mapdataset files ready for analysis
+    
+2- checking the datasets, and a sketch of fitting with Fermi
+
+3- the sources in fermi catalog as PLSuperExpCutoff are with problem, so I am describing and solving the problem of this source
+
+4- in this notebook I am saving the other source models as dataset in woody. Each different dataset has a source model, because I am saving the npred, which depends on the configuration of psf and exposure, which is different for each dataset
+
+5- notebook for fitting fermi with the new scheme, which includes the source with problem and the scheme of adding the other sources from the mapdatasets
+
+6- notebook for fitting all Fermi datasets, I tried to run it in the cluster, but apparently it does not work, so do it in the notebook itself.
+
+7- the notebook where I am creating all the plots with the results, basically the most important notebook
