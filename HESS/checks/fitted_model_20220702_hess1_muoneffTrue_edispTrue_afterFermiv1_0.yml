@@ -1,0 +1,236 @@
+components:
+- name: HESS J1741-302
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 358.2768249511719
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: 0.04908088967204094
+    type: PointSpatialModel
+  spectral:
+    parameters:
+    - frozen: true
+      name: index
+      value: 2.299999952316284
+    - frozen: true
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 2.099999997029825e-13
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    type: PowerLawSpectralModel
+  type: SkyModel
+- name: HESS J1745-290
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 359.94488525390625
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: -0.043911051005125046
+    type: PointSpatialModel
+  spectral:
+    parameters:
+    - error: 0.08224938596951437
+      name: index
+      value: 2.0124487771710267
+    - error: 1.2354318572330896e-13
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 2.064174426011742e-12
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    - error: 0.02563456178398508
+      name: lambda_
+      unit: TeV-1
+      value: 0.09951236704350504
+    - frozen: true
+      name: alpha
+      value: 1.0
+    type: ExpCutoffPowerLawSpectralModel
+  type: SkyModel
+- name: HESS J1745-303
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 358.64483642578125
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: -0.5642170310020447
+    - frozen: true
+      name: sigma
+      unit: deg
+      value: 0.1789042204618454
+    - frozen: true
+      name: e
+      value: 0.0
+    - frozen: true
+      name: phi
+      unit: deg
+      value: 0.0
+    type: GaussianSpatialModel
+  spectral:
+    parameters:
+    - frozen: true
+      name: index
+      value: 2.5673537254333496
+    - frozen: true
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 2.4662834708505388e-12
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 0.866960883140564
+    type: PowerLawSpectralModel
+  type: SkyModel
+- name: HESS J1746-285
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 0.14000000059604645
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: -0.11400000005960464
+    type: PointSpatialModel
+  spectral:
+    parameters:
+    - frozen: true
+      name: index
+      value: 2.1700000762939453
+    - frozen: true
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 1.8000000361756419e-13
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    type: PowerLawSpectralModel
+  type: SkyModel
+- name: HESS J1746-308
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 358.4482116699219
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: -1.1144022941589355
+    - frozen: true
+      name: sigma
+      unit: deg
+      value: 0.161526620388031
+    - frozen: true
+      name: e
+      value: 0.0
+    - frozen: true
+      name: phi
+      unit: deg
+      value: 0.0
+    type: GaussianSpatialModel
+  spectral:
+    parameters:
+    - frozen: true
+      name: index
+      value: 3.2707202434539795
+    - frozen: true
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 7.208768738192761e-12
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 0.4875279366970062
+    type: PowerLawSpectralModel
+  type: SkyModel
+- name: HESS J1747-281
+  spatial:
+    frame: galactic
+    parameters:
+    - frozen: true
+      name: lon_0
+      unit: deg
+      value: 0.871999979019165
+    - frozen: true
+      name: lat_0
+      unit: deg
+      value: 0.07599999755620956
+    type: PointSpatialModel
+  spectral:
+    parameters:
+    - error: 0.06990867816934436
+      name: index
+      value: 2.4305039174439917
+    - error: 5.0598088614688764e-14
+      name: amplitude
+      unit: cm-2 s-1 TeV-1
+      value: 7.178797079508069e-13
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    type: PowerLawSpectralModel
+  type: SkyModel
+- name: diff-emission
+  spatial:
+    filename: /home/saturn/caph/mppi043h/diffusiontemplate/cont_pcut_v3.fits
+    frame: galactic
+    normalize: false
+    parameters: []
+    type: TemplateSpatialModel
+    unit: 1 / (cm2 s sr TeV)
+  spectral:
+    parameters:
+    - error: 869.9892853772321
+      name: norm
+      value: 21150.104151510193
+    - error: 0.04295523041466307
+      name: tilt
+      value: -0.04245277430752846
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    type: PowerLawNormSpectralModel
+  type: SkyModel
+- datasets_names:
+  - iPTFYjFm
+  spectral:
+    parameters:
+    - error: 0.002358388997422415
+      name: norm
+      value: 1.0077978187102652
+    - error: 0.002542826261021232
+      name: tilt
+      value: -0.00024039251788365385
+    - frozen: true
+      name: reference
+      unit: TeV
+      value: 1.0
+    type: PowerLawNormSpectralModel
+  type: FoVBackgroundModel
